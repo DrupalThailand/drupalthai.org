@@ -6,3 +6,4 @@ services:
   appserver:
     build:
       - composer install
+      - drush si --db-url=mysql://drupal9:drupal9@database/drupal9 -y
